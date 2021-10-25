@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+/******************************* INFORMATION *******************************/
+/* DOCUMENT ID       : common.css                                          */
+/* DOCUMENT NAME     : Base Style Sheets                                   */
+/* DEVELOPER         : Moon Dong Jun (codename : wingzero)                 */
+/* DATE CREATED      : 2021.05.11                                          */
+/* MODIFICATION DATE : 2021.05.11                                          */
+/* NOTES             :                                                     */
+/***************************************************************************/
+
+/* Reset */
+* {margin:0;padding:0;border:0 none transparent;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+:before, :after {box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, textarea, p, blockquote, th, td, input, select, button, a {
+    font-family:'Noto Sans Kr', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    color:#666;letter-spacing:-0.03em;
+    line-height:22px;
+    font-size:14px;
+}
+
+html, body {height:100%;}
+
+form, fieldset, p, figure {word-break:break-all;word-wrap:break-word;}
+
+caption, legend {visibility:hidden;width:0;height:0;font-size:0;overflow:hidden;line-height:0;position:absolute;}
+
+fieldset, img {border:0 none;}
+
+menu, ol, ul, li, dl, dt, dd {list-style:none;}
+menu, ol, ul, dl, dt {display:block;}
+
+h1, h2, h3, h4, h5, h6, p {word-break:normal;word-wrap:break-word;}
+h1, h2, h3, h4, h5, h6, strong, th {font-weight:normal;}
+address, caption, pre, em, i {font-style:normal;}
+
+hr {display:none;}
+
+/* Form */
+input, select, textarea, button {color:#151515;vertical-align:middle;}
+input:focus, textarea:focus, button:focus {outline:none;}
+input::-ms-clear {display:none;}
+input::-webkit-input-placeholder {color:#444;}
+input:-moz-placeholder {color:#444;}
+input::-moz-placeholder {color:#444;}
+input:-ms-input-placeholder {color:#444;}
+input:focus::-webkit-input-placeholder {color:transparent;}
+input:focus:-moz-placeholder {color:transparent;}
+input:focus::-moz-placeholder {color:transparent;}
+input:focus:-ms-input-placeholder {color:transparent;}
+
+/* Input */
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="color"] {width:100%;height:50px;line-height:48px;border:1px solid #CCC;outline:0;transition:background 0.2s linear 0s, box-shadow 0.2s linear 0s;border-radius:5px;padding:0 10px;vertical-align:middle;}
+input[type="text"]:focus, input[type="password"]:focus {border-color:#806CE9;background:#FAFCEE;}
+
+input.type90 {width:90px;}
+input.type120 {width:120px;}
+input.type200 {width:200px;}
+input.type350 {width:350px;}
+input.type600 {width:600px;}
+
+/* textarea */
+textarea {resize:none;width:100%;border:1px solid #CCC;outline:0;transition:background 0.2s linear 0s, box-shadow 0.2s linear 0s;border-radius:5px;padding:10px;vertical-align:middle;}
+button, label {cursor:pointer;}
+button:hover {transition:color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;}
+a {text-decoration:none;cursor:pointer;transition:color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;}
+a:link, a:visited {color:#666;}
+a:hover, a:active {color:#806CE9;}
+
+textarea.type100 {height:100px;}
+textarea.type200 {height:200px;}
+
+/* checkbox */
+label.checkbox {width:14px;height:14px;display:inline-block;background:url("/theme/layout/dontong/images/check_off.png") no-repeat;cursor:pointer;vertical-align:middle;margin-right:10px;}
+input[type='checkbox']:checked + label {background:url("/theme/layout/dontong/images/check_on.png") no-repeat;}
+input[type='checkbox'] {display:none;}
+
+label.radio {width:14px;height:14px;display:inline-block;background:url("/theme/layout/dontong/images/radio_off.png") no-repeat;cursor:pointer;vertical-align:middle;}
+input[type='radio']:checked + label {background:url("/theme/layout/dontong/images/radio_on.png") no-repeat;}
+input[type='radio'] {display:none;}
+input[type='radio']:not(:first-child) + label {margin-left:10px;}
+
+/* Tables */
+table {width:100%;border-collapse:collapse;}
+table th, table td {color:#666;vertical-align:middle;word-break:normal;word-wrap:break-word;}
+
+/* Accessibility */
+.accessibility {visibility:hidden;width:0;height:0;font-size:0;overflow:hidden;}
+.skip {visibility:hidden;width:0;height:0;font-size:0;}
+
+.ellipsis {overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+
+/* Font Weight */
+.normal {font-style:normal;}
+.w200 {font-weight:200;}
+.w300 {font-weight:300;}
+.w400 {font-weight:400;}
+.w500 {font-weight:500;}
+.w600 {font-weight:600;}
+.w700 {font-weight:700;}
+.w800 {font-weight:800;}
+.w900 {font-weight:900;}
+
+/* Box */
+.box_siz {box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+
+i {vertical-align:middle;}
+
+/* Blank space */
+.h010 {width:100%;height:10px;clear:both;display:block;}
+.h020 {width:100%;height:20px;clear:both;display:block;}
+.h030 {width:100%;height:30px;clear:both;display:block;}
+.h040 {width:100%;height:40px;clear:both;display:block;}
+.h050 {width:100%;height:50px;clear:both;display:block;}
+.h060 {width:100%;height:60px;clear:both;display:block;}
+.h070 {width:100%;height:70px;clear:both;display:block;}
+.h080 {width:100%;height:80px;clear:both;display:block;}
+.h090 {width:100%;height:90px;clear:both;display:block;}
+.h100 {width:100%;height:100px;clear:both;display:block;}
+.h200 {width:100%;height:200px;clear:both;display:block;}
+.h300 {width:100%;height:300px;clear:both;display:block;}

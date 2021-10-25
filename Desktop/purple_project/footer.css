@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    background: #000;
+    padding: 35px 0;
+}
+.fotter-content{
+    display: flex;
+}
+.ft-left h2{
+    color:#fff;
+    font-weight: bold;
+    background: url("/img/f_logo.png") no-repeat 0 0;
+}

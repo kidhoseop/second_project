@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container h3 {
+  color: #151515;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 40px 0 80px 0;
+}
+.container .join-box {
+  margin-bottom: 60px;
+  display: table;
+  width: 100%;
+  border-top: 1px dotted #ccc;
+  padding-top: 50px;
+}
+.container .join-box .join-title {
+  display: table-cell;
+  font-size: 24px;
+  color: #151515;
+  width: 250px;
+}
+.container .join-box .join-title span {
+  font-family: 'Roboto', sans-serif;
+}
+.container .join-box .join-box-contents {
+  display: table-cell;
+}
+.container .join-box .join-box-contents ul li {
+  height: 60px;
+}
+input.type600 {
+  width: 600px;
+}
+.container .join-box .join-box-contents ul li button {
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  background: #151515;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #fff;
+}
+.container .join-box .join-box-contents ul li.checkli {
+  display: none;
+  height: 40px;
+  color: #dc0e0e;
+}
+.container .join-box .join-box-title {
+  display: table-cell;
+  font-size: 24px;
+  color: #151515;
+  width: 250px;
+}
+.container .join-box .join-box-contents ul li.roll {
+  font-size: 18px;
+  color: #151515;
+  height: 50px;
+  line-height: 50px;
+}
+input[type='checkbox'] {
+  display: none;
+}
+label.checkbox {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(/theme/check_off.png) no-repeat;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.container .join-box .join-box-contents ul li.roll2 {
+  color: #444;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.container .join-box .join-box-contents ul li.roll2 span {
+  color: #dc0e0e;
+  margin-right: 10px;
+}
+.container .join-box .join-box-txt {
+  padding-left: 250px;
+}
+.container .join-box .join-box-txt ul li:not(:last-child) {
+  background: url(/theme/dot.png) no-repeat 0 10px;
+  padding-left: 10px;
+}
+.container .join-box .join-box-txt ul li:last-child {
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.container .join-box .join-box-txt button {
+  width: 600px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 5px;
+  background: #151515;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}

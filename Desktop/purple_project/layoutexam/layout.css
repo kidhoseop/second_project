@@ -1,0 +1,110 @@
+ /**
+ * @author niceilm
+ */
+
+/* Type Selector */
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 굴림, Gulim, 돋움, Dotum, AppleGothic, Sans-serif;
+}
+
+img, fieldset {
+    border: none;
+}
+
+hr, legend {
+    display：none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+}
+
+a:visited {
+}
+
+a:hover, a:active, a:focus {
+}
+
+html:first-child select {
+    padding-right: 6px;
+    height: 20px;
+} /* Opera Fix */
+option, x:-moz-any-link {
+    padding-right: 4px;
+} /* Firefox Fix */
+option, x:-moz-any-link, x:default {
+    padding-right: 0;
+} /* Firefox Fix */
+
+ 
+
+/* Layout Selector */
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    height: 100%;
+    width: auto;
+}
+
+#header {
+    height: 100px;
+    background: #ddd;
+    position: relative;
+    z-index: 1;
+    width: auto;
+}
+
+#container {
+    min-height: 100%;
+    margin: -100px 0 -50px;
+    width: auto;
+}
+
+/* IE Hack */
+*html #container {
+    height: 100%;
+}
+
+#footer {
+    height: 50px;
+    background: #ddd;
+}
+
+.contents-box {
+    padding: 100px 0 50px 0;
+}
+
+.snb {
+    background: #00dfee;
+    float: left;
+    margin-right: -200px;
+    width: 200px;
+    height: 200px;
+}
+
+.contents {
+    margin-left: 200px;
+    background: #00ffee;
+    height: 500px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0 !important;
+    height: 0;
+    line-height: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+    width: 100%;
+}

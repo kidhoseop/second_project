@@ -1,0 +1,119 @@
+.mypage-wrap {
+  width: 100%;
+  padding-bottom: 60px;
+}
+.mypage-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mypage-box {
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+}
+.mypage-contents {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: top;
+}
+.mypage-wrap .mypage-box .mypage-contents h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 500;
+  line-height: 60px;
+}
+.mypage-wrap .mypage-box .mypage-contents h2 span {
+  color: #806ce9;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f7f7f7;
+  width: 100%;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox {
+  padding: 8px 0;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li {
+  display: table-cell;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li:first-child {
+  color: #333;
+  padding: 0 30px;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li {
+  padding-right: 30px;
+  padding-top: 0;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li.date-cho ul li {
+  width: 50px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #bfbfbf;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  font-size: 12px;
+  color: #888;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li.date {
+  border: 1px solid #bfbfbf;
+  padding: 0;
+  width: 130px;
+  height: 30px;
+  background: #fff;
+  line-height: 28px;
+  margin: 0;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li input {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li button {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background: #333;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.mypage-wrap .mypage-list h3 {
+  font-size: 18px;
+  color: #333;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.mord-list {
+  width: 100%;
+  border-top: 1px solid #333;
+}
+.lists {
+  margin-bottom: 4rem;
+}
+.mord-list ul li.title {
+  height: 40px;
+  background: #f8f8f8;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  line-height: 38px;
+}
+.mord-list ul li ul li {
+  border-bottom: 0;
+  display: table-cell;
+  width: 635px;
+}
+.mord-list ul li {
+  border-bottom: 1px solid #e5e5e5;
+}
+.lists li.non {
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+}

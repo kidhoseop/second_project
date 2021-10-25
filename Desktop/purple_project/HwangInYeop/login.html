@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://keyeast.purplenco.com/data/font/noto_sans/NotoSansFont.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- headder -->
+      <header>
+        <div class="header-nav-wrap">
+          <div class="header-left"></div>
+          <!-- navigation -->
+          <nav class="nav-content">
+            <ul>
+              <li>
+                <a class="login-page" href="#" title="로그인" data-transition="slide">LOGIN</a>
+              </li>
+              <li><a href="join.html" title="회원가입">JOIN</a></li>
+              <li><a href="#" title="마이페이지">MY page</a></li>
+              <li><a href="#" title="장바구니">CART</a></li>
+            </ul>
+          </nav>
+          <!-- navigation -->
+        </div>
+        <!--logo-->
+        <div class="logo-wrap">
+          <div class="logo">
+            <div class="logo-img">
+              <a href="index.html"> </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+      <section class="login-wrap">
+        <div class="inner">
+          <form name="lfrm" method="post" onsubmit="return login_check();">
+            <input type="hidden" name="gopage" value="" />
+            <input type="hidden" name="urd" value="/goods/list.html^category=01" />
+            <input type="hidden" name="otype" value="" />
+            <input type="hidden" name="langs" value="ko" />
+
+            <div class="login-box">
+              <h2>로그인</h2>
+              <p></p>
+              <ul>
+                <li><input type="text" name="login_id" id="login_id" placeholder="아이디를 입력하여 주십시오" value="" /></li>
+                <li><input type="password" name="login_pw" id="login_pw" placeholder="비밀번호를 입력하여 주십시오" /></li>
+                <li><button type="submit">로그인</button></li>
+                <li>
+                  <span>
+                    <input type="checkbox" name="save_id" id="save_id" value="S" />
+                    <label for="save_id" class="checkbox"></label> 아이디 저장
+                  </span>
+                  <span>
+                    <!--<a href="javascript:fnw();">아이디/비밀번호 찾기</a> |-->
+                    <a href="/login.html">회원가입</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="foot-cmp">
+          <h3>PURPLE&COMPANY</h3>
+          <ul>
+            <li>8, Cheomdanventure-ro 28beon-gil, Buk-gu, Gwangju, Korea</li>
+            <li>CEO : Lee Seungho<em>|</em>Business licence : 269-75-00155</li>
+            <li>Mail-order business report : 2019-광주북구-0281</li>
+            <li>Tel : +82-1800-5926<em>|</em>Personal information manager : 이승호</li>
+            <li>Mail : cs@purplenco.com</li>
+            <li>Copyright ⓒ 2019 ~ 2021 PURPLE&COMPANY. All Rights Reserved.</li>
+          </ul>
+        </div>
+        <div class="foot-cs">
+          <h3>CS Center</h3>
+          <ul>
+            <li>1800-5926</li>
+            <li>09:00 ~ 18:00</li>
+            <li>8, Cheomdanventure-ro 28beon-gil, Buk-gu, Gwangju, Korea</li>
+            <li>Email : cs@purplenco.com</li>
+          </ul>
+        </div>
+        <div class="foot-menu">
+          <ul>
+            <li><a href="http://purplenco.com" target="_blank">COMPANY</a></li>
+            <li><a href="#" target="_blank">Terms of Use</a></li>
+            <li><a href="#" target="_blank">Privacy Statement</a></li>
+            <li><a href="#" target="_blank">CS Cente</a></li>
+            <li><a href="#" target="_blank">Business information</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

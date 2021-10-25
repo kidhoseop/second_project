@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="detailpage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="tab.js"></script>
+    <script src="slide.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>
+      $(document).ready(function () {
+        var sku_1 = "<?=$_GET['sku'];?>"
+        if (sku_1 == '06') {
+          var tar = '/sku/greeting_set.png'
+        } else if (sku_1 == '01') {
+          var tar = '/sku/idpicture.jpg'
+        } else if (sku_1 == '02') {
+          var tar = '/sku/photocard.jpg'
+        } else if (sku_1 == '03') {
+          var tar = '/sku/poster.jpg'
+        } else if (sku_1 == '04') {
+          var tar = '/sku/calander.jpg'
+        } else if (sku_1 == '05') {
+          var tar = '/sku/pictorial.jpg'
+        }
+        $('.goods-image').css('background-image', 'url(' + tar + ')')
+      })
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!--header-->
+      <header>
+        <div class="header-nav-wrap">
+          <div class="header-left"></div>
+          <nav class="nav-content">
+            <ul>
+              <li>
+                <a class="login-page" href="login.html" title="로그인" data-transition="slide">LOGIN</a>
+              </li>
+              <li><a href="/join.html" title="회원가입">JOIN</a></li>
+              <li><a href="/my-page.html" title="마이페이지">MY page</a></li>
+              <li><a href="#" title="장바구니">CART</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--logo-->
+        <div class="logo-wrap">
+          <div class="logo">
+            <div class="logo-img">
+              <a href="index.html">
+                <div class="logo-outline"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="location">
+        <div class="loacation-content">
+          <div class="left">
+            <ul>
+              <li>
+                <a href=""></a>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <form action="#" method="post">
+        <section class="ginfo">
+          <div class="ginfo-inner">
+            <!-- Goods Image -->
+            <div class="ginfo-image">
+              <div id="goodsImg" class="goods-image">
+                <img id="my_image" src="" alt="" />
+              </div>
+              <div class="goods-thumb">
+                <ul>
+                  <li class="thumb-img" data-imgs="">
+                    <img src="" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Goods Image -->
+            <!-- Goods Information -->
+            <div class="ginfo-info">
+              <ul>
+                <li class="partner">
+                  퍼플앤컴퍼니
+                  <i class="fas fa-external-link-alt"></i>
+                </li>
+                <li class="tit">[HWANGINYEOP]</li>
+                <li class="icon">
+                  <span>
+                    <div class="star-base">
+                      <div class="star"></div>
+                      <div class="star-purple"></div>
+                    </div>
+                  </span>
+                  <span></span>
+                </li>
+                <li class="price">
+                  <span>0</span>
+                  원
+                </li>
+                <li class="del-info">
+                  <ul>
+                    <li>
+                      <div>배 &nbsp;송 &nbsp;비</div>
+                      <div><strong>3,000</strong>원</div>
+                    </li>
+                    <li>
+                      <div>배송방법</div>
+                      <div>택배배송</div>
+                    </li>
+                    <li>
+                      <!-- <div>소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;재</div> -->
+                      <!-- <div></div> -->
+                    </li>
+                  </ul>
+                </li>
+                <li class="options">
+                  <div class="select">
+                    <span class="placeholder">수량</span>
+                    <ul>
+                      <li data-oname="one" data-oprice="0" data-opid="1_0">
+                        <span>1개</span>
+                        <span></span>
+                      </li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="stock-option">
+                  <div class="oitem-box"></div>
+                </li>
+                <li class="tprice">
+                  총 금액
+                  <span id="tot-price">0</span>
+                  원
+                </li>
+                <li class="btn">
+                  <button type="button" name="goaction" data-mode="cart">장바구니</button>
+                  <button type="button" name="goaction" data-mode="buy">바로구매</button>
+                </li>
+                <li class="reser"></li>
+              </ul>
+            </div>
+            <!-- Goods Information -->
+          </div>
+        </section>
+        <div class="mobile-item-btn">
+          <ul>
+            <li><button type="button" name="goaction" data-mode="cart">장바구니</button></li>
+            <li><button type="button" name="goaction" data-mode="buy">바로구매</button></li>
+          </ul>
+        </div>
+      </form>
+      <section class="detailed">
+        <div class="tab-menu">
+          <div class="inner">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+              <li><a href="#tab1" class="active">상세정보</a></li>
+              <li><a href="#tab2" class="">배송/교환/반품안내</a></li>
+              <li><a href="#tab3" class="">상품평</a></li>
+              <li><a href="#tab4" class="">상품문의</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="containers">
+          <div class="inner">
+            <div class="detail">
+              <section id="first-tab-group" class="tabgroup">
+                <div id="tab1" style="display: none">
+                  <div class="gdetail">
+                    <!-- <img src="https://ambition.pvottshop.com/data/goods/G17354034_D1.jpg" /> -->
+                    <br /><br /><br />
+                    <div style="color: #dc0e0e">※ 모니터에 따라 색상이 다소 차이가 있을 수 있습니다.</div>
+                    ※ 미성년자가 체결한 계약은 법정 대리인이 동의하지 않는 경우 본인 또는 법정 대리인이 취소할 수 있습니다.
+                  </div>
+                  <!-- Product Information Announcement -->
+                  <div class="goods-info">
+                    <h3>상품 정보 제공 고시</h3>
+                    <ul>
+                      <li><span>제품소재</span><span></span></li>
+                      <li><span>색상</span><span></span></li>
+                      <!-- <li><span>치수</span><span>라벨을 참조하여 주십시오</span></li> -->
+                      <li><span>제조자/수입자</span><span>퍼플앤컴퍼니</span></li>
+                      <li><span>제조국</span><span>대한민국</span></li>
+                      <!-- <li><span>세탁방법 및 취급시 주의사항</span><span>라벨을 참조하여 주십시오</span></li> -->
+                      <li><span>제조연월</span><span></span></li>
+                      <li><span>품질보증기준</span><span>관련법 및 소비자 분쟁해결 기준에 따름</span></li>
+                      <li><span>A/S 책임자와 전화번호</span><span>퍼플앤컴퍼니 1800-5926</span></li>
+                    </ul>
+                  </div>
+                  <!-- // Product Information Announcement -->
+                </div>
+                <!-- Delivery Information -->
+                <div id="tab2" style="display: none">
+                  <div class="info-del">
+                    <h3>배송안내</h3>
+                    <ul>
+                      <li><span>배송비</span><span>3,000원</span></li>
+                      <li>
+                        <span>배송안내</span>
+                        <span>
+                          <!--배송은 발송예정일 이후 순차적으로 배송됩니다. <br>-->
+                          운송장 정보 등록 후 2 ~ 3일 정도 소요됩니다.<br />
+                          도서/산간지역 등은 평균 소요일 보다 1 ~ 2일 차이 날 수 있습니다.<br />
+                          불가항력(물량 수급 변동, 천재지변 등)인 사유로 배송이 다소 지연될 수 있습니다.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info-del">
+                    <h3>교환/반품 안내</h3>
+                    <ul>
+                      <li>
+                        <span>교환/반품 비용</span>
+                        <span>
+                          6,000원(왕복배송비용)<br />
+                          - 교환/반품 비용은 고객 변심 경우에만 부담하시게 됩니다.<br />
+                          - 도서산간 및 일부 지역은 추가 비용이 발생할 수 있습니다.<br />
+                          - 제품에 따라 화물 등의 수단으로 배송된 제품은 별도 추가 배송이 발생할 수 있습니다.
+                        </span>
+                      </li>
+                      <li>
+                        <span>교환/반품 신청가능기간</span>
+                        <span>
+                          반품/교환 시 고객센터(게시판, 전화) 협의 후 교환/반품 접수 해 주십시오. 교환/반품 접수 없이 임의로 보내실 경우<br />
+                          반품/교환/환불이 불가할 수 있습니다. 이점 유의하여 주십시오<br /><br />
+                          - 상품 수령일로부터 7일 이내(단순변심의 경우 반품/교환 배송비 부담)<br />
+                          - 상품의 내용이 표시/광고 내용과 상이한 경우에는 상품을 수령한 날로부터 3개월 이내, 그 사실을 안 날로부터 30일 이내에 청약철회 가능
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="info-del">
+                    <h3>교환/반품/환불의 제한</h3>
+                    <ul>
+                      <li class="txt">&nbsp;</li>
+                      <li class="txt">· 주문 제작 상품의 경우 상품제작이 진행된 경우</li>
+                      <li class="txt">· 상품의 가치가 현저히 감소한 경우(사용/착용, 시간의 경과 등)</li>
+                      <li class="txt">· 취급상의 부주의로 인한 파손, 오염, 고장 등으로 재판매가 불가한 경우</li>
+                      <li class="txt">· 모니터 해상도 및 색상의 차이로 이미지와 다름을 이유로 무료 반품/교환을 요구할 경우</li>
+                      <li class="txt">· 한정판 상품의 경우에는 반품/교환/환불이 불가합니다.</li>
+                      <li class="txt">&nbsp;</li>
+                      <li class="txt2">※ 기타 반품 제한 사항</li>
+                      <li class="txt2">- 의류, 잡화 등 : 택(TAG) 제거, 라벨 및 상품훼손, 세탁 및 착용</li>
+                      <li class="txt2">- 도서류, DVD, CD, 음반 등 : 복제가 가능한 상품의 포장 등을 개봉/훼손/멸실된 경우</li>
+                      <li class="txt2">- 화장품/화장지/기타 위생용품 류 : 개봉으로 인하여 포장재 등이 훼손된 경우</li>
+                      <li class="txt2">- 가전제품 : 제품의 포장 비닐이 훼손된 경우</li>
+                      <li class="txt2">- 디지털 가전 : 보증 라벨, 고유번호 등이 훼손된 경우</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- // Delivery Information -->
+                <!-- Review -->
+                <div id="tab3" style="display: none">
+                  <div class="review">
+                    <div class="inner">
+                      <div class="review-page">
+                        <div class="review-head">
+                          <div class="review-head-left">총 <span>0건</span>의 후기가 있습니다.</div>
+                          <div class="review-head-right"></div>
+                        </div>
+                        <div class="review-body">
+                          <div class="review-content">등록된 후기가 없습니다.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // Review -->
+                <!-- Q&A -->
+                <div id="tab4" style="display: none">
+                  <div class="item-qna">
+                    <div class="inner">
+                      <h2>[HWANGINYEOP]</h2>
+                      <div class="item-qna-btn">
+                        <a class="qa-btn" data-entype="G">문의하기</a>
+                        <div class="qa-box">
+                          <form name="sbfrm" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off">
+                            <input type="hidden" name="bo_id" value="gqna" />
+                            <input type="hidden" name="bo_depth" value="A" />
+                            <input type="hidden" name="bo_w_type" value="G" />
+                            <input type="hidden" name="itemno" value="G17354034" />
+                            <input type="hidden" name="catecode" value="01" />
+                            <!--<input type="hidden" name="bo_wname" value="">-->
+                            <input type="hidden" name="bo_wid" value="" />
+                            <!--<input type="hidden" name="bo_wpw" value="">-->
+                            <input type="hidden" name="bmode" value="WRITE" />
+                            <ul>
+                              <li>
+                                <span>구분</span>
+                                <span>
+                                  <select name="bo_cate">
+                                    <option value="">선택하세요</option>
+                                    <option value="상품">상품</option>
+                                    <option value="배송">배송</option>
+                                    <option value="교환.반품/취소/환불">교환.반품/취소/환불</option>
+                                    <option value="기타">기타</option>
+                                  </select>
+                                </span>
+                              </li>
+                              <li>
+                                <span>이름</span>
+                                <span><input type="text" name="bo_wname" placeholder="이름을 입력하세요" /></span>
+                              </li>
+                              <li>
+                                <span>비밀번호</span>
+                                <span><input type="password" name="bo_wpw" placeholder="비밀번호를 입력하시면 비밀글로 등록됩니다." /></span>
+                              </li>
+                              <li>
+                                <span>제목</span>
+                                <span><input type="text" name="bo_subject" placeholder="제목을 입력하세요" /></span>
+                              </li>
+                              <li>
+                                <span>내용</span>
+                                <span><textarea name="bo_content" placeholder="내용을 입력하세요"></textarea></span>
+                              </li>
+                            </ul>
+                            <div class="qa-box-btn">
+                              <div class="left">
+                                <ul>
+                                  <li>※ 상품문의는 회원만 이용가능합니다.</li>
+                                  <li>※ 상품문의에 대한 답변은 <strong>마이페이지 &gt; 상품문의</strong>에서 확인 가능합니다.</li>
+                                  <li>※ 상품문의와 관련없는 광고성 홍보글, 비방글은 동의 없이 삭제될 수 있습니다.</li>
+                                </ul>
+                              </div>
+                              <div class="right">
+                                <button type="button" name="qna_ent" data-entype="G">등록</button>
+                                <button type="button" name="qna_cancels">취소</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="item-qna-list">
+                        <ul>
+                          <li id="sbrd_title">
+                            <ul class="tit">
+                              <li class="num">번호</li>
+                              <li class="types">유형</li>
+                              <li class="subject">제목</li>
+                              <li class="writer">작성자</li>
+                              <li class="wdate">작성일</li>
+                              <li class="state">답변상태</li>
+                            </ul>
+                          </li>
+                          <li class="non">등록된 문의가 없습니다.</li>
+                        </ul>
+                        <div class="spaging-wrap">
+                          <a href="#" data-page="1" class="lbtn prv-start"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                          <a href="#" data-page="0" class="lbtn prv"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                          <a href="#" data-page="1" class="lbtn on">1</a>
+                          <a href="#" data-page="2" class="lbtn nst"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          <a href="#" data-page="1" class="lbtn nst-end"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // Q&A -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="foot-cmp">
+          <h3>PURPLE&COMPANY</h3>
+          <ul>
+            <li>8, Cheomdanventure-ro 28beon-gil, Buk-gu, Gwangju, Korea</li>
+            <li>CEO : Lee Seungho<em>|</em>Business licence : 269-75-00155</li>
+            <li>Mail-order business report : 2019-광주북구-0281</li>
+            <li>Tel : +82-1800-5926<em>|</em>Personal information manager : 이승호</li>
+            <li>Mail : cs@purplenco.com</li>
+            <li>Copyright ⓒ 2019 ~ 2021 PURPLE&COMPANY. All Rights Reserved.</li>
+          </ul>
+        </div>
+        <div class="foot-cs">
+          <h3>CS Center</h3>
+          <ul>
+            <li>1800-5926</li>
+            <li>09:00 ~ 18:00</li>
+            <li>8, Cheomdanventure-ro 28beon-gil, Buk-gu, Gwangju, Korea</li>
+            <li>Email : cs@purplenco.com</li>
+          </ul>
+        </div>
+        <div class="foot-menu">
+          <ul>
+            <li><a href="http://purplenco.com" target="_blank">COMPANY</a></li>
+            <li><a href="#" target="_blank">Terms of Use</a></li>
+            <li><a href="#" target="_blank">Privacy Statement</a></li>
+            <li><a href="#" target="_blank">CS Cente</a></li>
+            <li><a href="#" target="_blank">Business information</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
