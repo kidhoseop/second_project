@@ -33,3 +33,14 @@
 
 //   $('.attSku').on('click')
 // })
+function mouseClick() {
+  let changeImg = document.getElementsByClassName('detail01')
+  if (changeImg === document.getElementsByClassName('detail01')) {
+    let target1 = (document.getElementsByClassName('goods-image').style.backgroundImage = "url('/sku/greeting_set.png')")
+  } else if (changeImg === document.getElementsByClassName('detail02')) {
+    let target1 = (document.style.backgroundImage = "url('/sku/idpicture.jpg')")
+  } else if (changeImg === document.getElementsByClassName('detail03')) {
+    let target1 = (document.style.backgroundImage = "url('/sku/photocard.jpg')")
+  }
+  //   document.getElementsByClassName('goods-image').style.backgroundImage = "url('target1')"
+}

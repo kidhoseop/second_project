@@ -2,7 +2,7 @@
   width: 100%;
   padding-bottom: 60px;
 }
-.mypage-inner {
+.inner {
   width: 1200px;
   margin: 0 auto;
 }
@@ -83,11 +83,18 @@
   font-size: 12px;
 }
 
-.mypage-wrap .mypage-list h3 {
+.mypage-wrap .mypage-box .mypage-contents h3 {
   font-size: 18px;
   color: #333;
   padding-left: 20px;
   margin-top: 20px;
+}
+.mypage-wrap .mypage-list h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
 }
 .mord-list {
   width: 100%;
@@ -116,4 +123,44 @@
   height: 40px;
   text-align: center;
   line-height: 38px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .mypage-wrap .mypage-box {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .mypage-wrap .mypage-box .mypage-contents {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .mypage-wrap .mypage-box .mypage-contents .mypage-search .mypage-sbox ul li.date-cho {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  input[type='text'] {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .mord-list ul li.title {
+    display: none;
+  }
 }

@@ -76,6 +76,7 @@ label.checkbox {
 .login-wrap .inner .login-box ul li span:last-child {
   text-align: right;
 }
+
 @media screen and (min-width: 200px) and (max-width: 599px) {
   .login-wrap {
     width: 100%;

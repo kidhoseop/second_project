@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="join.css" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="join.js"></script>
     <title>Document</title>
   </head>
+
   <body>
     <div class="wrap">
       <!-- headder -->
@@ -147,5 +150,94 @@
       </footer>
       <!-- footer -->
     </div>
+
+    <script>
+      $(function () {
+        // 아이디 중복확인
+        $(document).on('click', '#check_id', function () {
+          var mb_id = document.getElementById('mb_id')
+          if (!mb_id.value) {
+            $('#id_confirm').show().removeClass('ok_color').html('아이디를 입력하세요')
+            mb_id.focus()
+            return false
+          } else {
+            $.ajax({
+              type: 'POST',
+              url: 'id.inc.php',
+              data: { mb_id: $.trim(mb_id.value) },
+              success: function (result) {
+                if (result == '210') {
+                  $('#id_confirm').show().removeClass('ok_color').html('사용 불가능한 아이디 입니다.')
+                  $('[name=id_check]').val('N')
+                } else if (result == '310') {
+                  $('#id_confirm').show().addClass('ok_color').html('사용 가능한 아이디 입니다.')
+                  $('[name=id_check]').val('Y')
+                }
+              },
+            })
+          }
+        })
+
+        // 비밀번호 확인
+        $(document).on('keyup', '[name=mb_pw_1]', function () {
+          var pw = $('[name=mb_pw_1]').val()
+          if (pw.length > 7 && pw.length < 21) {
+            if (!str_check(pw)) {
+              $('#pw_confirm').show().removeClass('ok_color').html('비밀번호는 영문+숫자+특수문자 조합으로 8~20자 이내로 설정하여 주십시오')
+              $('[name=pw_check]').val('N')
+            } else {
+              $('#pw_confirm').show().addClass('ok_color').html('사용 가능한 비밀번호 입니다.')
+              $('[name=pw_check]').val('Y')
+            }
+          } else {
+            $('#pw_confirm').show().removeClass('ok_color').html('사용 불가능한 비밀번호 입니다')
+            $('[name=pw_check]').val('N')
+          }
+        })
+
+        $(document).on('keyup', '[name=mb_pw_2]', function () {
+          var pw1 = $('[name=mb_pw_1]').val()
+          var pw2 = $('[name=mb_pw_2]').val()
+
+          if (pw1 != pw2) {
+            $('#pw_confirm').show().removeClass('ok_color').html('비밀번호가 일치하지 않습니다.')
+            $('[name=pw_match]').val('N')
+          } else {
+            $('#pw_confirm').show().addClass('ok_color').html('일치하는 비밀번호 입니다.')
+            $('[name=pw_match]').val('Y')
+          }
+        })
+
+        // 체크박스 전체 체크
+        $(document).on('click', '#all_check', function () {
+          if ($('#all_check').is(':checked') == true) {
+            $('input:checkbox').prop('checked', true)
+          } else {
+            $('input:checkbox').prop('checked', false)
+          }
+        })
+
+        // 전화번호
+        $(document).on('keyup', '[name=mb_mobile]', function () {
+          var textinput = $("[name='mb_mobile']").val()
+          textinput = textinput.replace(/[^0-9]/g, '')
+          var tmp = ''
+
+          if (textinput.length > 3 && textinput.length <= 7) {
+            tmp += textinput.substr(0, 3)
+            tmp += '-'
+            tmp += textinput.substr(3)
+            $("[name='mb_mobile']").val(tmp)
+          } else if (textinput.length > 7) {
+            tmp += textinput.substr(0, 3)
+            tmp += '-'
+            tmp += textinput.substr(3, 4)
+            tmp += '-'
+            tmp += textinput.substr(7)
+            $("[name='mb_mobile']").val(tmp)
+          }
+        })
+      })
+    </script>
   </body>
 </html>

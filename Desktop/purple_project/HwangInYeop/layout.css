@@ -164,6 +164,11 @@ footer {
   color: #666;
 }
 
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .nav-content ul li {
+    padding-left: 10px;
+  }
+}
 /* 스크린이 600이하일 경우 */
 @media all and (max-width: 600px) {
   .foot-cs,

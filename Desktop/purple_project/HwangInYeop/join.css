@@ -110,3 +110,77 @@ label.checkbox {
   font-weight: 500;
   font-size: 16px;
 }
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-title {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-contents {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-contents ul li {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  input.type600 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  input[type='text'] {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-contents ul li button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-contents ul li button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-title {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-txt {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .container .join-box .join-box-txt button {
+    width: 100%;
+  }
+}

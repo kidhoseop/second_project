@@ -1,0 +1,464 @@
+.ord-head {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.ord-head .inner {
+  display: table;
+  height: 60px;
+  border-bottom: 2px solid #151515;
+}
+.ord-head .inner .left {
+  display: table-cell;
+  height: 60px;
+  width: 50%;
+  text-align: left;
+  vertical-align: middle;
+}
+.ord-head .inner .left span {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 500;
+  color: #333;
+}
+.ord-head .inner .right {
+  display: table-cell;
+  height: 60px;
+  width: 50%;
+  text-align: right;
+  vertical-align: middle;
+  color: #999;
+  font-size: 16px;
+}
+.ord-head .inner .right span {
+  color: #333;
+}
+.ord-head .inner .right .fa-chevron-right {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #bfbfbf;
+  margin: 0 10px;
+}
+.fa-chevron-right:before {
+  content: '\f054';
+}
+.apply-form {
+  width: 100%;
+  text-align: center;
+}
+/* Goods Info */
+.apply-form .ord-goods {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.apply-form .ord-goods .inner {
+  display: inline-block;
+  text-align: left;
+}
+.apply-form .ord-goods .inner ul li {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.apply-form .ord-goods .inner ul li ul li {
+  display: table-cell;
+  padding: 20px;
+  vertical-align: top;
+  border: 0 !important;
+  font-size: 16px;
+}
+.apply-form .ord-goods .inner ul li.title {
+  border-bottom: 1px solid #333;
+}
+.apply-form .ord-goods .inner ul li.title ul li {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: bottom;
+  padding-right: 6px;
+  height: 40px;
+  color: #636363;
+  padding-bottom: 0;
+}
+input[type='checkbox'] {
+  display: none;
+}
+label.checkbox {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(/theme/check_off.png) no-repeat;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.apply-form .ord-goods .inner ul li.title ul li.w750s {
+  width: 750px;
+  border: 0 !important;
+  text-align: left;
+  vertical-align: middle;
+}
+.apply-form .ord-goods .inner ul li.title ul li.w750s h4 {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+}
+.apply-form .ord-goods .inner ul li.title ul li.w150s {
+  width: 150px;
+  border: 0 !important;
+}
+/* form */
+
+.apply-form .ord-goods .inner ul li ul {
+  border: 0 !important;
+}
+.apply-form .ord-goods .inner ul li ul li.w100 {
+  width: 100px;
+}
+.apply-form .ord-goods .inner ul li ul li.w140 {
+  width: 140px;
+}
+.apply-form .ord-goods .inner ul li ul li div.image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.cart-img {
+  width: 100%;
+}
+.apply-form .ord-goods .inner ul li ul li.w360 {
+  width: 360px;
+}
+.apply-form .ord-goods .inner ul li ul li strong {
+  color: #e3242e;
+  width: 100%;
+  display: inline-block;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 {
+  width: 150px;
+  text-align: center;
+  border-right: 1px solid #e6e6e6 !important;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.apply-form .ord-goods .inner ul li ul li span {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 span {
+  font-family: 'Roboto', sans-serif;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 div {
+  height: 30px;
+  margin-top: 20px;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 div ul {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 div ul li:first-child {
+  border-right: 0 !important;
+  cursor: pointer;
+  width: 30px;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 div ul li {
+  height: 30px;
+  border: 1px solid #e6e6e6 !important;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  line-height: 30px;
+}
+.apply-form .ord-goods .inner ul li ul li.w150 div ul li:last-child {
+  border-left: 0 !important;
+  cursor: pointer;
+  width: 30px;
+}
+.apply-form .ord-goods .inner ul li ul li.right {
+  text-align: right;
+}
+.apply-form .ord-goods .inner ul li ul li.w150:last-child {
+  border-right: 0 !important;
+}
+.apply-form .ord-goods .inner ul li.delivery {
+  background: #f8f8f8;
+  padding: 30px 20px;
+  text-align: right;
+  font-size: 16px;
+  color: #666;
+  display: none;
+}
+.apply-form .ord-goods .inner ul li.delivery span:first-child {
+  font-weight: 300;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #806ce9;
+}
+
+/* Goods Price Total Info */
+.apply-form .tot-price {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.apply-form .tot-price .inner {
+  display: table;
+  text-align: left;
+  background: #f8f8f8;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 40px 0;
+}
+.apply-form .tot-price .inner .left {
+  display: table-cell;
+  width: 40%;
+  color: #333;
+  font-size: 30px;
+  padding-left: 100px;
+  font-weight: 500;
+}
+.apply-form .inner .right {
+  width: 40%;
+  display: table-cell;
+  vertical-align: top;
+}
+.apply-form .tot-price .inner .right {
+  display: table-cell;
+  width: 60%;
+}
+.apply-form .tot-price .inner .right ul {
+  margin-right: 50px;
+}
+.apply-form .tot-price .inner .right ul li {
+  display: table;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  border-bottom: 1px solid #d5d5d5;
+  color: #333;
+}
+.apply-form .tot-price .inner .right ul li span {
+  display: table-cell;
+  width: 50%;
+  height: 60px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.apply-form .tot-price .inner .right ul li span:last-child {
+  text-align: right;
+  padding-right: 20px;
+}
+.apply-form .tot-price .inner .right ul li span strong {
+  font-family: 'Roboto', sans-serif;
+}
+.apply-form .tot-price .inner .right ul li:last-child span {
+  font-size: 24px;
+}
+.apply-form .tot-price .inner .right ul li span strong.red {
+  color: #dc0e0e;
+  font-weight: 600;
+}
+.apply-form .tot-price .inner .right ul li:last-child {
+  border-bottom: 0;
+}
+/* Goods Price Total Info */
+/* Goods Button */
+.apply-form .goods-btn-area {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.apply-form .inner {
+  display: table;
+}
+.apply-form .goods-btn-area .inner a {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  background: #151515;
+  color: #fff;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head {
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner .left {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner .left span {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner .right {
+    font-size: 12px;
+    height: 40px;
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner .right span {
+    color: #333;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .ord-head .inner .right .fa-chevron-right {
+    margin: 0 4px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li.title ul li.w750s {
+    padding-top: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li.title ul li.w150s {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li {
+    display: block;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li {
+    display: block;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w100 {
+    width: 40px;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w140 {
+    width: calc(100% - 46px);
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w360 {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w150 {
+    width: 100%;
+    display: block;
+    border-right: 0 !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w150 div {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li.w150 div ul li {
+    display: table-cell;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li ul li:nth-of-type(5) {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .ord-goods .inner ul li.delivery {
+    padding: 15px;
+  }
+}
+
+/* Good Price Total info */
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner {
+    display: inline-block;
+    padding: 10px 0;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner .left {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner .right {
+    width: 100%;
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner .right ul {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner .right ul li {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .apply-form .tot-price .inner .right ul li span {
+    height: 40px;
+  }
+}
